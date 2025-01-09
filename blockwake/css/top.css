@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* * {
+  outline: 1px solid blue;
+  padding: 10px;
+} */
+
+/* トップ画面 */
+.top-img img {
+  width: 1000px;
+  margin-top: 200px;
+}
+@media screen and (max-width: 680px) {
+  .top-img img {
+    width: 100%;
+    margin-top: 262px;
+    /* margin-left: 5px; */
+    /* max-width: 100%;
+    height: auto; */
+  }
+}
+.top-img-logo {
+  /* width: 243px;
+  height: 266px; */
+  width: 200px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  left: 50px;
+  top: 250px;
+  position: absolute;
+}
+.catchcopy {
+  width: 417.5px;
+  height: 255px;
+  top: 530px;
+  left: 60px;
+  position: absolute;
+}
+
+@media screen and (max-width: 680px) {
+  .top-img-logo {
+    width: 25%;
+    margin-top: 30px;
+    left: 10px;
+  }
+  .catchcopy {
+    left: 10px;
+    top: 400px;
+  }
+  .catchcopy img {
+    width: 50%;
+  }
+}
+/* 院長挨拶 */
+.greeting {
+  padding: 10px;
+}
+.greeting-title {
+  padding: 10px;
+  margin-top: 160px;
+  text-align: center;
+  font-size: 30px;
+  color: #8cc63f;
+}
+.greeting-title::before {
+  content: url(../img/SVG/satologo2.png);
+  margin-right: 20px;
+}
+@media screen and (max-width: 680px) {
+  .greeting-title {
+    margin-top: 80px;
+  }
+}
+.greeting-contents {
+  display: flex;
+  padding: 10px;
+}
+@media screen and (max-width: 680px) {
+  .greeting-contents {
+    display: block;
+  }
+}
+.greeting-foto {
+  padding: 10px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 680px) {
+  .greeting-foto {
+    text-align: center;
+  }
+}
+.greeting-text {
+  padding: 10px;
+  margin-left: 50px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 680px) {
+  .greeting-text {
+    margin: 0 auto;
+  }
+}
+/* ご連絡 */
+.contact {
+  padding: 10px;
+}
+.contact-title {
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: #8cc63f;
+}
+.contact-title::before {
+  content: url(../img/SVG/mailicon.png);
+  margin-right: 20px;
+}
+.contact-outer {
+  padding: 10px;
+  border-bottom: 2px solid;
+  border-color: #82ceec;
+}
+.top-bor {
+  border-top: 2px solid;
+  border-color: #82ceec;
+}
+
+.contact-item {
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+.contact-outer .contact-item span {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.contact-outer .contact-item a {
+  text-decoration: none;
+  color: #000;
+}
+.contact-list-link {
+  background-color: #8cc63f;
+  width: 180px;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+.contact-list-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-list-link a:hover {
+  color: #ff8c00;
+}
+/* コラム */
+.columm {
+  padding: 10px;
+}
+.columm-title {
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #8cc63f;
+}
+.columm-title::before {
+  content: url(../img/SVG/colummicon.png);
+  margin-right: 20px;
+}
+.columm-outer {
+  padding: 10px;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #82ceec;
+}
+.top-bor {
+  border-top: 2px solid;
+  border-color: #82ceec;
+}
+/* 上手くかからない */
+/* .columm-outer:last-of-type {
+  border-top: solid;
+  border-width: 2px;
+  border-color: #82ceec;
+  margin-bottom: 40px;
+} */
+.columm-item {
+  padding: 10px;
+  margin: 0 auto;
+  width: 390px;
+}
+.columm-outer .columm-item span {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.columm-item a {
+  text-decoration: none;
+  color: #000;
+}
+.columm-list-link {
+  background-color: #8cc63f;
+  width: 165px;
+  padding: 20px 20px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+.columm-list-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.columm-list-link a:hover {
+  color: #ff8c00;
+}
+
+/* 診療時間 */
+.clinic-hours {
+  padding: 10px;
+}
+.clinic-hours-title {
+  padding: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #8cc63f;
+}
+.clinic-hours-title::before {
+  content: url(../img/SVG/timeicon.png);
+  margin-right: 20px;
+}
+.clinic-hours-contents {
+  display: flex;
+  padding: 10px;
+}
+@media screen and (max-width: 680px) {
+  .clinic-hours-contents {
+    display: block;
+  }
+}
+.clinic-schedule {
+  padding: 10px;
+  flex: 1;
+}
+table tr th {
+  padding: 10px;
+}
+table tr td {
+  padding-left: 10px;
+}
+table .time {
+  background-color: #5eae59;
+  color: #fff;
+}
+td {
+  color: #009245;
+}
+table .AM {
+  color: #009245;
+}
+table .PM {
+  color: #009245;
+}
+tr {
+  background-color: #f7f8da;
+}
+.clinic-schedule-txt {
+  padding: 10px;
+  flex: 1;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 680px) {
+  .clinic-schedule-txt {
+    margin: 0 auto;
+  }
+}

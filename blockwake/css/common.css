@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/* * {
+  outline: 1px solid blue;
+} */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+/* * {
+  outline: 1px solid blue;
+  padding: 10px;
+} */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+    "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+@media screen and (max-width: 680px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* ヘッダー */
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.logo {
+  padding: 10px;
+  width: 220px;
+  margin: auto 0;
+}
+.imfomation {
+  display: flex;
+  padding: 10px;
+  background-color: #82ceec;
+  color: #fff;
+  text-align: center;
+}
+/* @media screen and (max-width: 680px) {
+  .imfomation {
+    width: 390px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+} */
+.adress {
+  padding: 10px;
+  padding-top: 15px;
+  flex: 1;
+  border-right: solid 2px #fff;
+}
+@media screen and (max-width: 680px) {
+  .adress {
+    font-size: 13.5px;
+    padding-top: 17px;
+    margin-bottom: 9px;
+  }
+}
+.tel {
+  padding: 11px;
+  flex: 1;
+}
+.tel a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 680px) {
+  .tel {
+    font-size: 13.5px;
+    padding-top: 1px;
+  }
+}
+.tel a:hover {
+  color: #ff8c00;
+}
+.tel::before {
+  content: ""; /*何も入れない*/
+  display: inline-block;
+  width: 20px; /*画像の幅*/
+  height: 25px; /*画像の高さ*/
+  background-image: url(../img/1x/telicon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+@media screen and (max-width: 680px) {
+  .tel::before {
+    margin-top: 7px;
+  }
+}
+/* 元のナビゲーションのスタイル ここから*/
+/* .nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #8cc63f;
+  color: #fff;
+  text-align: center;
+} */
+/* .nav-item {
+  padding: 10px;
+  flex: 1;
+  vertical-align: middle;
+  border-right: 2px solid #fff;
+} */
+/* .nav-item:last-child {
+  border-right: none;
+}
+.nav .nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .nav-item a:hover {
+  color: #ff8c00;
+} */
+/* ここまで */
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #8cc63f;
+  color: #fff;
+  text-align: center;
+  width: 1000px;
+  margin-top: 7px;
+}
+@media screen and (max-width: 680px) {
+  .nav {
+    flex-wrap: wrap;
+    width: calc(100%);
+  }
+}
+.nav-item {
+  flex: 1;
+  vertical-align: middle;
+  width: calc(100% / 6);
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 680px) {
+  .nav .nav-item {
+    min-width: calc(100% / 3);
+    max-width: calc(100% / 3);
+    border-bottom: 2px solid #fff;
+  }
+}
+.nav .nav-item:nth-child(6) a {
+  border-right: none;
+}
+@media screen and (max-width: 680px) {
+  .nav .nav-item:nth-child(3n) a {
+    border-right: none;
+  }
+  .nav-item:nth-child(4),
+  .nav-item:nth-child(5),
+  .nav-item:nth-child(6) {
+    border-bottom: none;
+  }
+}
+.nav .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #fff;
+  height: 42px;
+}
+.nav .nav-item a:hover {
+  color: #ff8c00;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 980px;
+  z-index: 5;
+}
+@media screen and (max-width: 680px) {
+  .header {
+    width: 420px;
+  }
+}
+.imfomation {
+  position: fixed;
+  width: 980px;
+  top: 92px;
+  z-index: 5;
+}
+@media screen and (max-width: 680px) {
+  .imfomation {
+    width: 420px;
+  }
+}
+.nav {
+  position: fixed;
+  top: 150px;
+  z-index: 5;
+}
+.mt-fixed {
+  margin-top: 200px;
+}
+@media screen and (max-width: 680px) {
+  .mt-fixed {
+    margin-top: 252px;
+  }
+}
+.header .imfomation .nav .top-img {
+  /* padding: 10px; */
+  margin-bottom: 200px;
+  position: relative;
+}
+
+/* フッター */
+footer {
+  background-color: #8cc63f;
+}
+.line1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+@media screen and (max-width: 680px) {
+  .line1 {
+    display: block;
+  }
+}
+.banar1 {
+  padding: 10px;
+}
+@media screen and (max-width: 680px) {
+  .banar1 {
+    text-align: center;
+  }
+}
+.banar2 {
+  padding: 10px;
+}
+@media screen and (max-width: 680px) {
+  .banar2 {
+    text-align: center;
+  }
+}
+
+.line2 {
+  padding: 10px;
+  display: flex;
+  width: 312px;
+  height: 70px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.line3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+}
+.line3 a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 680px) {
+  .line3 {
+    flex-wrap: wrap;
+  }
+}
+.line3 a:hover {
+  color: #ff8c00;
+}
+.ftnav1 {
+  padding: 3px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav2 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav3 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav4 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav5 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav6 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.ftnav7 {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer .line3-9 {
+  display: flex;
+}
+.line4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  /* display: flex;
+  justify-content: center; */
+  color: #fff;
+  font-size: 12px;
+  padding-left: 440px;
+  padding-right: 360px;
+}
+footer .back-botton img {
+  /* width: 5%; */
+  width: 45px;
+  /* margin-left: 740px; */
+}
+/* @media screen and (max-width: 680px) {
+  footer .back-botton img {
+    width: 12%;
+    margin-left: 380px;
+  }
+} */
+@media screen and (max-width: 680px) {
+  .line4 {
+    padding-left: 140px;
+    padding-right: 100px;
+  }
+}

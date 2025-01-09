@@ -1,0 +1,362 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+/* * {
+  outline: 1px solid blue;
+  padding: 10px;
+} */
+/* ↓ */
+@media screen and (max-width: 680px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+      "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3",
+      "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  }
+
+  /* ヘッダー */
+  .header {
+    /* padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; */
+    all: initial;
+    display: block;
+  }
+  .logo {
+    padding: 10px;
+    width: 220px;
+    margin: auto 0;
+  }
+  .imfomation {
+    display: flex;
+    padding: 10px;
+    background-color: #82ceec;
+    color: #fff;
+    text-align: center;
+  }
+  @media screen and (max-width: 680px) {
+    .imfomation {
+      width: 390px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+  }
+  .adress {
+    padding: 10px;
+    flex: 1;
+  }
+  .tel {
+    padding: 10px;
+    flex: 1;
+  }
+  .tel::before {
+    content: ""; /*何も入れない*/
+    display: inline-block;
+    width: 20px; /*画像の幅*/
+    height: 25px; /*画像の高さ*/
+    background-image: url(../img/1x/telicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 680px) {
+    .imfomation {
+      width: 390px;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #8cc63f;
+    color: #fff;
+    text-align: center;
+  }
+  .nav-item {
+    /* padding: 10px; */
+    flex: 1;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 680px) {
+    .pc {
+      display: none;
+    }
+    .sp .nav-item {
+      width: 390px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .nav .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav .nav-item a:hover {
+    color: #ff8c00;
+  }
+  .header .imfomation .nav .top-img {
+    /* padding: 10px; */
+    margin-bottom: 200px;
+    position: relative;
+  }
+  /* トップ画面 */
+  .top-img {
+  }
+  @media screen and (max-width: 680px) {
+    .top-img {
+      width: 390px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+    }
+  }
+  .top-img-logo {
+    width: 243px;
+    height: 266px;
+    left: 80px;
+    top: 250px;
+    position: absolute;
+  }
+  .catchcopy {
+    width: 417.5px;
+    height: 255px;
+    top: 555px;
+    left: 160px;
+    position: absolute;
+  }
+
+  /* 院長挨拶 */
+  .greeting {
+    padding: 10px;
+  }
+  .greeting-title {
+    padding: 10px;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 30px;
+    color: #8cc63f;
+  }
+  .greeting-title::before {
+    content: url(../img/SVG/satologo2.png);
+  }
+  .greeting-contents {
+    display: flex;
+    padding: 10px;
+  }
+  .greeting-foto {
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .greeting-text {
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+
+  /* ご連絡 */
+  .contact {
+    padding: 10px;
+  }
+  .contact-title {
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #8cc63f;
+  }
+  .contact-title::before {
+    content: url(../img/SVG/mailicon.png);
+  }
+  .contact-outer {
+    padding: 10px;
+    border-top: solid;
+    border-width: 2px;
+    border-color: #82ceec;
+  }
+  .contact-outer:last-of-type {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #82ceec;
+    margin-bottom: 40px;
+  }
+  .contact-item {
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .contact-outer .contact-item span {
+    color: #a9a9a9;
+    font-size: 14px;
+  }
+  .contact-outer .contact-item a {
+    text-decoration: none;
+    color: #000;
+  }
+  .contact-list-link {
+    text-align: center;
+    background-color: #8cc63f;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .contact-list-link a {
+    text-decoration: none;
+    color: #fff;
+  }
+  /* コラム */
+  .columm {
+    padding: 10px;
+  }
+  .columm-title {
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #8cc63f;
+  }
+  .columm-title::before {
+    /* content: url(); */
+  }
+  .columm-outer {
+    padding: 10px;
+    border-top: solid;
+    border-width: 2px;
+    border-color: #82ceec;
+  }
+  .columm-outer:last-of-type {
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #82ceec;
+    margin-bottom: 40px;
+  }
+  .columm-item {
+    padding: 10px;
+    margin: 0 auto;
+    width: 390px;
+  }
+  .columm-outer .columm-item span {
+    color: #a9a9a9;
+    font-size: 14px;
+  }
+  .columm-item a {
+    text-decoration: none;
+    color: #000;
+  }
+  .columm-list-link {
+    padding: 10px;
+    text-align: center;
+    background-color: #8cc63f;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .columm-list-link a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* 診療時間 */
+  .clinic-hours {
+    padding: 10px;
+  }
+  .clinic-hours-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #8cc63f;
+  }
+  .clinic-hours-contents {
+    display: flex;
+    padding: 10px;
+  }
+  .clinic-schedule {
+    padding: 10px;
+    flex: 1;
+  }
+  table tr th {
+    padding: 10px;
+  }
+  table tr td {
+    padding-left: 10px;
+  }
+  table .time {
+    background-color: #5eae59;
+    color: #fff;
+  }
+  td {
+    color: #009245;
+  }
+  table .AM {
+    color: #009245;
+  }
+  table .PM {
+    color: #009245;
+  }
+  tr {
+    background-color: #f7f8da;
+  }
+  .clinic-schedule-txt {
+    padding: 10px;
+    flex: 1;
+    line-height: 1.5;
+  }
+
+  /* フッター */
+  footer {
+    background-color: #8cc63f;
+  }
+  .line1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .banar1 {
+    padding: 10px;
+  }
+  .banar2 {
+    padding: 10px;
+  }
+  .line2 {
+    padding: 10px;
+    display: flex;
+    width: 312px;
+    height: 71px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  .line3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+  }
+  .ftnav1 {
+    padding: 10px;
+  }
+  .ftnav2 {
+    padding: 10px;
+  }
+  .ftnav3 {
+    padding: 10px;
+  }
+  .ftnav4 {
+    padding: 10px;
+  }
+  .ftnav5 {
+    padding: 10px;
+  }
+  .ftnav6 {
+    padding: 10px;
+  }
+  .line4 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+  }
+}
