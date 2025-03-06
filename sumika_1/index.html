@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="トグルメニュー" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <title>sumika</title>
+    <!-- ↓これはSlick.jsが提供する基本的なスタイルシートで、スライダーが機能するための基本的なデザインを提供します。例えば、スライダー本体やその動作に関するスタイリングが含まれています（例えば、スライドの位置、アニメーション、リスト項目のスタイルなど）。
+このCSSを読み込まないと、スライダー自体が正しく表示されません。 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <!-- ↓これは、Slick.jsのテーマスタイルです。slick.cssで定義されている基本的なスタイルにさらにカスタマイズされたデザインが追加されています。slick-theme.cssも一緒に読み込むことで、ビジュアルが整います。 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- ロゴ -->
+        <div class="logo"><img src="img/logo.svg" alt="sumikalogo" /></div>
+        <div class="header-top">
+          <!-- <div class="logo"><img src="img/logo.svg" alt="sumikalogo" /></div> -->
+          <form class="seach-box">
+            <!-- プルダウンメニュー -->
+            <div class="sb1">
+              <select name="category" id="">
+                <option value="">全て</option>
+                <option value="interior">インテリア</option>
+                <option value="kitchen">キッチン用品</option>
+                <option value="office">オフィス用品</option>
+                <option value="book">本</option>
+                <option value="craft">手芸・クラフト</option>
+                <option value="fashion">ファッション小物</option>
+                <option value="cosme">コスメ</option>
+                <option value="stationery">文具</option>
+                <option value="gift">ギフトセット</option>
+              </select>
+
+              <!-- キーワード入力 -->
+              <input
+                type="text"
+                name="keyword"
+                placeholder="カテゴリから検索"
+              />
+            </div>
+
+            <!-- 検索ボタン -->
+            <button type="submit">
+              <img src="img/i-searth.png" alt="" />
+            </button>
+          </form>
+
+          <!-- アイコンボタン -->
+          <div class="h-icon">
+            <div class="g">
+              <a class="h-mi"><img src="img/i-human.png" alt="" /></a>
+              <p class="login">ログイン</p>
+            </div>
+            <div class="g">
+              <a class="h-mi"><img src="img/i-clock.png" alt="" /></a>
+              <p class="eturan">閲覧履歴</p>
+            </div>
+            <div class="g">
+              <a class="h-mi"><img src="img/i-mappin.png" alt="" /></a>
+              <p class="access">アクセス</p>
+            </div>
+            <div class="g">
+              <a class="h-mi"><img src="img/i-hearts.png" alt="" /></a>
+              <p class="fav">お気に入り</p>
+            </div>
+            <div class="g">
+              <a class="h-mi"><img src="img/i-cart.png" alt="" /></a>
+              <p class="cart">カート</p>
+            </div>
+          </div>
+        </div>
+        <!-- ナビゲーション -->
+        <div class="headerInner">
+          <div class="openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav">
+            <ul class="navList" id="navi">
+              <li class="item">
+                <a href="#">インテリア ∨</a>
+                <ul>
+                  <li><a href="#">ソファ・椅子</a></li>
+                  <li><a href="#">テーブル・机</a></li>
+                  <li><a href="#">カーテン</a></li>
+                </ul>
+              </li>
+
+              <li class="item">
+                <a href="#">キッチン用品 ∨</a>
+                <ul>
+                  <li><a href="#">フライパン</a></li>
+                  <li><a href="#">鍋</a></li>
+                  <li><a href="#">包丁・まな板・スライサー</a></li>
+                  <li><a href="#">キッチン収納</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">オフィス用品 ∨</a>
+                <ul>
+                  <li><a href="#">オフィスチェア</a></li>
+                  <li><a href="#">オフィスデスク</a></li>
+                  <li><a href="#">オフィスワゴン</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">本 ∨</a>
+                <ul>
+                  <li><a href="#">小説</a></li>
+                  <li><a href="#">漫画</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">手芸・クラフト ∨</a>
+                <ul>
+                  <li><a href="#">裁縫セット</a></li>
+                  <li><a href="#">工具セット</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">ファッション小物 ∨</a>
+                <ul>
+                  <li><a href="#">ファッション収納</a></li>
+                  <li><a href="#">ミラー</a></li>
+                  <li><a href="#">ハンガー</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">コスメ ∨</a>
+                <ul>
+                  <li><a href="#">ベースメイク</a></li>
+                  <li><a href="#">アイメイク</a></li>
+                  <li><a href="#">リップメイク</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">文具 ∨</a>
+                <ul>
+                  <li><a href="#">文具収納</a></li>
+                  <li><a href="#">文房具セット</a></li>
+                  <li><a href="#">万年筆</a></li>
+                </ul>
+              </li>
+              <li class="item">
+                <a href="#">ギフトセット ∨</a>
+                <ul>
+                  <li><a href="#">癒しのギフトセット</a></li>
+                  <li><a href="#">キッチンエレガントセット</a></li>
+                  <li><a href="#">ホリデーシーズンセット</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- スライドメニューがこの配置だと動いた↓ -->
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $("#navi li").hover(
+                function () {
+                  $(this).children("ul").stop(true, true).slideDown(200);
+                },
+                function () {
+                  $(this).children("ul").stop(true, true).slideUp(200);
+                }
+              );
+            });
+          </script>
+          <!-- うまく動かなかった部分↓ -->
+          <!-- <script>
+          $(function () {
+            $("#navi")
+              .children("li")
+              .hover(function () {});
+          });
+        </script>
+        <script>
+          $(function () {
+            $("#navi")
+              .children("li")
+              .hover(function () {
+                $(this).children("ul").stop().slideToggle(100);
+              });
+          });
+        </script> -->
+        </div>
+      </header>
+      <!-- トグルメニュー用として最後に配置したJQuery部分（スライドメニューがこれだと動かなかった、何故）↓ -->
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+      <script>
+        $(".openbtn").click(function () {
+          $(this).toggleClass("active");
+          $(".nav").toggleClass("active");
+        });
+      </script>
+
+      <!-- トップ画像 PC -->
+      <div class="slider-box pc">
+        <div class="slider">
+          <img src="img/top-img.png" alt="" />
+          <img src="img/top-img2.png" alt="" />
+        </div>
+        <!-- buttons -->
+        <div class="custom-button">
+          <button class="prev">‹</button>
+          <button class="next">›</button>
+        </div>
+      </div>
+
+      <!-- トップ画像 SP -->
+      <div class="slider-box sp">
+        <div class="slider">
+          <img src="img/top-sp.png" alt="" />
+          <img src="img/top-sp2.png" alt="" />
+        </div>
+        <!-- buttons -->
+        <div class="custom-button">
+          <button class="prev">‹</button>
+          <button class="next">›</button>
+        </div>
+      </div>
+
+      <!-- お知らせ -->
+      <h2>お知らせ</h2>
+      <section>
+        <ul>
+          <li>
+            <a href="#"
+              ><span class="s-date">2025/02/07</span
+              ><span class="s-notice">EVENT</span><br />
+              <p>お知らせについての文章が入ります</p></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="s-date">2025/02/07</span
+              ><span class="s-notice">EVENT</span
+              ><br />お知らせについての文章が入ります</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="s-date">2025/02/07</span
+              ><span class="s-notice">INFO</span
+              ><br />お知らせについての文章が入ります</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="s-date">2025/02/07</span
+              ><span class="s-notice">INFO</span
+              ><br />お知らせについての文章が入ります</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="s-date">2025/02/07</span
+              ><span class="s-notice">FEATURE</span
+              ><br />お知らせについての文章が入ります</a
+            >
+          </li>
+          <a href="#" class="s-more">もっと見る ></a>
+        </ul>
+      </section>
+
+      <!-- 人気商品 -->
+      <main>
+        <div class="popular-item">
+          <div class="link1">
+            <h3>人気商品</h3>
+            <p><a href="#">人気商品一覧へ ></a></p>
+          </div>
+
+          <ul>
+            <li>インテリア</li>
+            <li>キッチン用品</li>
+            <li>オフィス用品</li>
+            <li>本</li>
+            <li>手芸・クラフト</li>
+            <li>ファッション小物</li>
+            <li>コスメ</li>
+            <li>文具</li>
+          </ul>
+
+          <!-- 人気商品ランキング -->
+          <div class="ranking1">
+            <ol>
+              <li>
+                <a href="#">
+                  <img src="img/1x/item5.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item2.png" alt="商品2" />
+                  <p class="name">シンプルなデスクオーガナイザー</p>
+                  <p class="price">2,200円 (税込)</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 新着商品 -->
+        <div class="new-item">
+          <div class="link2">
+            <h3>新着商品</h3>
+            <p><a href="#">新着商品一覧へ ></a></p>
+          </div>
+          <ul>
+            <li>インテリア</li>
+            <li>キッチン用品</li>
+            <li>オフィス用品</li>
+            <li>本</li>
+            <li>手芸・クラフト</li>
+            <li>ファッション小物</li>
+            <li>コスメ</li>
+            <li>文具</li>
+          </ul>
+
+          <div class="ranking2">
+            <ol>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span class="rank"></span> -->
+                  <img src="img/item1.png" alt="商品1" />
+                  <p class="name">モダンなガラスキャニスター</p>
+                  <p class="price">1,880円 （税込）</p>
+                  <div class="stars">
+                    ★★★★☆<span class="rnumber">(130)</span>
+                  </div>
+                </a>
+                <div class="favorite"><img src="img/heart.png" alt="" /></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">インテリア</a></li>
+          <li><a href="#">キッチン用品</a></li>
+          <li><a href="#">オフィス用品</a></li>
+          <li><a href="#">本</a></li>
+          <li><a href="#">手芸・クラフト</a></li>
+          <li><a href="#">ファッション小物</a></li>
+          <li><a href="#">コスメ</a></li>
+          <li><a href="#">文具</a></li>
+          <li><a href="#">ギフトセット</a></li>
+          <li><a href="#">人気商品から探す</a></li>
+          <li><a href="#">新着商品から探す</a></li>
+          <li><a href="#">ログイン</a></li>
+          <li><a href="#">カート</a></li>
+          <li><a href="#">店舗情報</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#">ご利用ガイド</a></li>
+          <li><a href="#">配送料について</a></li>
+        </ul>
+
+        <div class="back-botton">
+          <a href="#"><img src="img/1x/back-button.png" alt="戻るボタン" /></a>
+        </div>
+
+        <p>Copyright © 2025 HARUMI NISHIMOTO.All right reserved.</p>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+      $(function () {
+        // $(document).ready()の短縮形
+        const isMobile = window.innerWidth <= 768; // スマホのサイズを判定（768px以下をスマホと仮定）
+
+        // Slickスライダーを初期化
+        $(".slider").slick({
+          autoplay: true, // autoplayを有効にする
+          autoplaySpeed: isMobile ? 5000 : 5000, // スマホの場合はautoplaySpeedを無くす（0に設定）
+          dots: true, // ドットナビゲーションを表示するかどうか
+          infinite: true, // スライダーが最後まで行ったら最初に戻るかどうか
+          speed: 500, // スライドの移動速度（ミリ秒単位）
+          slidesToShow: 1, // 一度に表示するスライドの数
+          adaptiveHeight: true, // スライダーの高さを各スライドの高さに応じて調整
+          swipe: true, // スワイプ操作を有効にする
+          touchMove: true, // タッチ操作でスライド移動を可能にする
+          draggable: true, // マウスドラッグでもスライドを動かせるようにする
+        });
+
+        // カスタムボタンの動作
+        $(".prev").on("click", function () {
+          $(".slider").slick("slickPrev"); // 前のスライドに移動
+        });
+        $(".next").on("click", function () {
+          $(".slider").slick("slickNext"); // 次のスライドに移動
+        });
+      });
+    </script>
+  </body>
+</html>
