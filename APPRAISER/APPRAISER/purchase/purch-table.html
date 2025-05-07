@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="APPRAISER" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/purch-table.css" />
+    <title>APPRAISER</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <a href="../index.html"
+            ><img src="../img/logo-pc.svg" alt="ロゴ"
+          /></a>
+        </h1>
+        <ul class="nav">
+          <li><a href="purchase.html">仕入管理</a></li>
+          <li><a href="../guidance/index.html">案内管理</a></li>
+          <li><a href="../construction/index.html">工事管理</a></li>
+          <li><a href="../vendor/index.html">業者一覧</a></li>
+          <li><a href="../property/index.html">物件管理</a></li>
+          <li><a href="../seller/index.html">売主物件</a></li>
+          <li><a href="../file/index.html">ファイルマネージャー</a></li>
+          <li><a href="../title/index.html">タイトル管理</a></li>
+          <li><a href="../user/index.html">ユーザー情報</a></li>
+        </ul>
+        <div class="block">
+          <div class="y">
+            <a href="#"
+              ><img src="../img/user-icon.svg" alt="ユーザーアイコン" />
+              <p>アカウント</p></a
+            >
+          </div>
+          <div class="l">
+            <a href="../login/index.html"
+              ><img src="../img/logout-icon.svg" alt="ログアウト" />
+              <p>ログアウト</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <ul class="nav1">
+        <li><a href="../index.html">HOME＞</a></li>
+        <li><a href="purchase.html">仕入管理</a></li>
+        <li>＞検索結果</li>
+      </ul>
+      <nav class="btn">
+        <div class="back-b">
+          <a href="purchase.html">戻る</a>
+        </div>
+        <div class="deta">
+          <a href="#">データ出力</a>
+        </div>
+      </nav>
+      <div class="keka">
+        <span class="kensu">検索結果:132件</span
+        ><span class="kensu">最終更新時間：yy/mm/dd hh:mm:ss</span>
+      </div>
+      <div class="table-box">
+        <table border="1">
+          <tbody>
+            <tr>
+              <th>物件No</th>
+              <th>物件名</th>
+              <th>部屋番号</th>
+              <th>最寄駅</th>
+              <th>面積<br />（㎡）</th>
+              <th>担当</th>
+              <th>登録日</th>
+              <th>ランク</th>
+              <th>距離</th>
+              <th>業者名</th>
+              <th>店舗名</th>
+              <th>担当者名</th>
+              <th>内見日</th>
+              <th>机上金額<br />（万円）</th>
+              <th>売上希望金額<br />（万円）</th>
+              <th>備考</th>
+            </tr>
+            <tr>
+              <td class="No">0000001</td>
+              <td>飯田ハイツ</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)<br />鶯谷駅(JR)</td>
+              <td class="size">100.0</td>
+              <td class="name">坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td class="name">山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td class="bikou">
+                駅からも近く人気物件のため内見日注意ああああああああああああああああああああ
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000002</td>
+              <td>飯田荘</td>
+              <td class="roomno">101</td>
+              <td>高輪ゲートウェイ(JR)</td>
+              <td class="size">50.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">B</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">100.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000003</td>
+              <td>a-飯田</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000004</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000005</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000006</td>
+              <td>飯田ハイツ</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000007</td>
+              <td>飯田荘</td>
+              <td class="roomno">101</td>
+              <td>田端駅(JR)</td>
+              <td class="size">50.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">B</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">40.0</td>
+              <td class="money">50.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000008</td>
+              <td>a-飯田</td>
+              <td class="roomno">1201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">24/10/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>アットホーム</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>事故物件</td>
+            </tr>
+            <tr>
+              <td class="No">0000009</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000010</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000011</td>
+              <td>飯田ハイツ</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000012</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000013</td>
+              <td>飯田ハイツ</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000014</td>
+              <td>飯田荘</td>
+              <td class="roomno">101</td>
+              <td>田端駅(JR)</td>
+              <td class="size">50.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">B</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">40.0</td>
+              <td class="money">50.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000015</td>
+              <td>a-飯田</td>
+              <td class="roomno">1201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">24/10/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>アットホーム</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>事故物件</td>
+            </tr>
+            <tr>
+              <td class="No">0000016</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000017</td>
+              <td>fast-cort</td>
+              <td class="roomno">203</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">B</td>
+              <td class="rank">C</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000018</td>
+              <td>飯田ハイツ</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>
+                駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意駅からも近く人気物件のため内見日注意
+              </td>
+            </tr>
+            <tr>
+              <td class="No">0000019</td>
+              <td>飯田荘</td>
+              <td class="roomno">101</td>
+              <td>田端駅(JR)</td>
+              <td class="size">50.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">B</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">100.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+            <tr>
+              <td class="No">0000020</td>
+              <td>a-飯田</td>
+              <td class="roomno">201</td>
+              <td>上野駅(JR)</td>
+              <td class="size">100.0</td>
+              <td>坂本龍一</td>
+              <td class="day">25/01/27</td>
+              <td class="rank">A</td>
+              <td class="rank">A</td>
+              <td>大東建託</td>
+              <td>いい部屋ネット</td>
+              <td>山本太郎</td>
+              <td class="day">25/01/27<br />~<br />25/01/29</td>
+              <td class="money">100.0</td>
+              <td class="money">200.0</td>
+              <td>駅からも近く人気物件のため内見日注意</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

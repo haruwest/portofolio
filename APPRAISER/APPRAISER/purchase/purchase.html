@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="APPRAISER" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/purchase.css" />
+    <title>APPRAISER</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <a href="../index.html"
+            ><img src="../img/logo-pc.svg" alt="ロゴ" class="pc"
+          /></a>
+          <a href="../index.html"
+            ><img src="../img/logo-sp.svg" alt="ロゴ" class="sp"
+          /></a>
+        </h1>
+        <form name="formlink">
+          <select
+            name="selectlink"
+            class="selectlink"
+            onchange="if(document.formlink.selectlink.value){location.href=document.formlink.selectlink.value;}"
+          >
+            <option value="#" selected>仕入管理</option>
+            <option value="../guidance/index.html">案内管理</option>
+            <option value="../construction/index.html">工事管理</option>
+            <option value="../vendor/index.html">業者一覧</option>
+            <option value="../property/index.html">物件管理</option>
+            <option value="../seller/index.html">売主物件</option>
+            <option value="../file/index.html">ファイルマネージャー</option>
+            <option value="../title/index.html">タイトル管理</option>
+            <option value="../user/index.html">ユーザー情報</option>
+          </select>
+        </form>
+        <ul class="nav">
+          <li><a href="purchase.html">仕入管理</a></li>
+          <li><a href="../guidance/index.html">案内管理</a></li>
+          <li><a href="../construction/index.html">工事管理</a></li>
+          <li><a href="../vendor/index.html">業者一覧</a></li>
+          <li><a href="../property/index.html">物件管理</a></li>
+          <li><a href="../seller/index.html">売主物件</a></li>
+          <li><a href="../file/index.html">ファイルマネージャー</a></li>
+          <li><a href="../title/index.html">タイトル管理</a></li>
+          <li><a href="../user/index.html">ユーザー情報</a></li>
+        </ul>
+        <div class="block">
+          <div class="y">
+            <a href="#"
+              ><img src="../img/user-icon.svg" alt="ユーザーアイコン" />
+              <p>アカウント</p></a
+            >
+          </div>
+          <div class="l">
+            <a href="../login/index.html"
+              ><img src="../img/logout-icon.svg" alt="ログアウト" />
+              <p>ログアウト</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <ul class="nav1">
+        <li><a href="../index.html">HOME＞</a></li>
+        <li>仕入管理</li>
+      </ul>
+      <div class="block2">
+        <p>新規登録</p>
+        <div class="block3">
+          <div class="button-bluepc">
+            <a href="purch-regi.html">登録</a>
+          </div>
+        </div>
+      </div>
+      <div class="block4">
+        <p>検索</p>
+        <div class="Table">
+          <div class="table">
+            <table>
+              <tbody>
+                <tr>
+                  <th>物件No.</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>担当</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>ランク</th>
+                  <td>
+                    <label class="selectbox-3">
+                      <select>
+                        <option value="駅名">ランク</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                        <option>E</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>物件名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>フリガナ</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>部屋番号</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>面積</th>
+                  <td class="td"><input type="text" /><span>㎡</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table2">
+            <table>
+              <tbody>
+                <tr>
+                  <th>最寄駅</th>
+                  <td class="Td">
+                    <label class="selectbox-3">
+                      <select>
+                        <option value="駅名">駅名</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                      </select>
+                    </label>
+                    <label class="selectbox-3">
+                      <select>
+                        <option value="駅名">駅名</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>距離</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>業者名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>店舗名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>担当者名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>内見日</th>
+                  <td class="Td">
+                    <input type="date" /><span>〜</span><input type="date" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>除外</th>
+                  <td>
+                    <label class="selectbox-3">
+                      <select>
+                        <option>除外</option>
+                        <option>非除外</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kuria">
+          <button type="button" id="clearBtn">クリア</button>
+        </div>
+        <div class="button-bluepc-2">
+          <a href="purch-table.html">検索</a>
+        </div>
+      </div>
+    </div>
+    onchange="if(document.formlink.selectlink.value){
+    location.href=document.formlink.selectlink.value; }"
+  </body>
+</html>

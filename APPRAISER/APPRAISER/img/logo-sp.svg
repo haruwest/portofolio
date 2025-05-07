@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.92 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #f8b62d;
+      }
+    </style>
+  </defs>
+  <g id="_ロゴ" data-name="ロゴ">
+    <g>
+      <polygon class="cls-1" points="46.55 19.52 36.2 9.3 26.79 0 17.49 9.41 7.27 19.77 0 27.13 4.24 31.31 11.5 23.95 21.73 13.6 26.84 8.42 32.02 13.53 42.37 23.76 49.73 31.03 53.92 26.79 46.55 19.52"/>
+      <path class="cls-2" d="M26.57,15.48l-14.62,14.81.12,19.72,5.76-.04v-.05s0-.48,0-.48l-.09-14.01,17.88-.11.09,14.01v.48s0,.06,0,.06h.52s0,0,0,0l5.28-.03-.12-19.72-14.81-14.62ZM17.87,31.45l8.67-8.38,8.77,8.27-17.44.11Z"/>
+      <path class="cls-1" d="M23.63,39.72h2.35v2.9h-2.9v-2.35c0-.3.24-.54.54-.54Z" transform="translate(-.26 .15) rotate(-.36)"/>
+      <path class="cls-1" d="M27.43,39.69h2.35c.3,0,.54.24.54.54v2.35h-2.9v-2.9h0Z" transform="translate(-.26 .18) rotate(-.36)"/>
+      <path class="cls-1" d="M27.46,43.56h2.9v2.35c0,.3-.24.54-.54.54h-2.35v-2.9h0Z" transform="translate(-.28 .18) rotate(-.36)"/>
+      <path class="cls-1" d="M23.11,43.59h2.9v2.9h-2.35c-.3,0-.54-.24-.54-.54v-2.35h0Z" transform="translate(-.28 .16) rotate(-.36)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="APPRAISER" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/purchase-regi.css" />
+    <title>APPRAISER</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <a href="../index.html"
+            ><img src="../img/logo-pc.svg" alt="ロゴ"
+          /></a>
+        </h1>
+        <ul class="nav">
+          <li><a href="purchase.html">仕入管理</a></li>
+          <li><a href="../guidance/index.html">案内管理</a></li>
+          <li><a href="../construction/index.html">工事管理</a></li>
+          <li><a href="../vendor/index.html">業者一覧</a></li>
+          <li><a href="../property/index.html">物件管理</a></li>
+          <li><a href="../seller/index.html">売主物件</a></li>
+          <li><a href="../file/index.html">ファイルマネージャー</a></li>
+          <li><a href="../title/index.html">タイトル管理</a></li>
+          <li><a href="../user/index.html">ユーザー情報</a></li>
+        </ul>
+        <div class="block">
+          <div class="y">
+            <a href="#"
+              ><img src="../img/user-icon.svg" alt="ユーザーアイコン" />
+              <p>アカウント</p></a
+            >
+          </div>
+          <div class="l">
+            <a href="../login/index.html"
+              ><img src="../img/logout-icon.svg" alt="ログアウト" />
+              <p>ログアウト</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <ul class="nav1">
+        <li><a href="../index.html">HOME＞</a></li>
+        <li><a href="purchase.html">仕入管理</a></li>
+        <li>＞新規登録</li>
+      </ul>
+      <div class="block4">
+        <p>登録</p>
+        <div class="Table">
+          <div class="table">
+            <table>
+              <tbody>
+                <tr>
+                  <th>物件No.<span class="asuta">＊</span></th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>担当</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>ランク</th>
+                  <td>
+                    <label class="selectbox-3">
+                      <select>
+                        <option value="駅名">ランク</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                        <option>D</option>
+                        <option>E</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>物件名<span class="asuta">＊</span></th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>フリガナ</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>部屋番号<span class="asuta">＊</span></th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>面積<span class="asuta">＊</span></th>
+                  <td class="td"><input type="text" /><span>㎡</span></td>
+                </tr>
+                <tr>
+                  <th>最寄駅<span class="asuta">＊</span></th>
+                  <td class="Td">
+                    <label class="selectbox-3">
+                      <select>
+                        <option>上野駅(JR)</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                      </select>
+                    </label>
+                    <label class="selectbox-3">
+                      <select>
+                        <option>上野駅(JR)</option>
+                        <option>上野駅</option>
+                        <option>上野駅</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>距離</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>業者名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>店舗名</th>
+                  <td><input type="text" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table2">
+            <table>
+              <tbody>
+                <tr>
+                  <th>担当者名</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>内見日</th>
+                  <td class="Td">
+                    <input type="date" class="deta" /><span>~</span
+                    ><input type="date" class="deta" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>机上金額</th>
+                  <td class="td"><input type="text" /><span>万円</span></td>
+                </tr>
+                <tr>
+                  <th>売上希望金額</th>
+                  <td class="td"><input type="text" /><span>万円</span></td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>
+                    <textarea name="bikou" cols="" rows="4"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th>仕入経緯<span class="asuta">＊</span></th>
+                  <td class="Td">
+                    <label class="selectbox-3">
+                      <select>
+                        <option>会社案件</option>
+                        <option>新規業者（TEL・FAX）</option>
+                        <option>新規業者（訪問）</option>
+                        <option>既存業者（契約有）</option>
+                        <option>既存業者（契約無）</option>
+                        <option>その他</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>除外<span class="asuta">＊</span></th>
+                  <td>
+                    <label class="selectbox-3">
+                      <select>
+                        <option>除外</option>
+                        <option>非除外</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>添付画像</th>
+                  <td><input class="file" type="file" /></td>
+                </tr>
+                <tr>
+                  <th class=""></th>
+                  <td class="asuta-1">*必須項目</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="kuria">
+          <a class="back-b" href="purchase.html">戻る</a>
+          <button type="button" id="clearBtn">クリア</button>
+        </div>
+        <div class="button-bluepc">
+          <a href="#">登録 </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

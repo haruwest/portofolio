@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="APPRAISER" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/top.css" />
+    <title>APPRAISER</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <img src="img/logo-pc.svg" alt="ロゴ" class="pc" />
+          <a href="#"><img src="img/logo-sp.svg" alt="ロゴ" class="sp" /></a>
+        </h1>
+        <form name="formlink">
+          <select
+            name="selectlink"
+            class="selectlink"
+            onchange="if(document.formlink.selectlink.value){location.href=document.formlink.selectlink.value;}"
+          >
+            <option value="#" selected>仕入管理</option>
+            <option value="guidance/index.html">案内管理</option>
+            <option value="construction/index.html">工事管理</option>
+            <option value="vendor/index.html">業者一覧</option>
+            <option value="property/index.html">物件管理</option>
+            <option value="seller/index.html">売主物件</option>
+            <option value="file/index.html">ファイルマネージャー</option>
+            <option value="title/index.html">タイトル管理</option>
+            <option value="user/index.html">ユーザー情報</option>
+          </select>
+        </form>
+        <div class="block">
+          <div class="y">
+            <a href="#"
+              ><img src="img/user-icon.svg" alt="ユーザーアイコン" />
+              <p>アカウント</p></a
+            >
+          </div>
+          <div class="l">
+            <a href="login/index.html"
+              ><img src="img/logout-icon.svg" alt="ログアウト" />
+              <p>ログアウト</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="home">
+        <a href="purchase/index.html"
+          ><img src="img/home-btn-nt_01.png" alt="仕入管理" />
+          <p>仕入管理</p></a
+        >
+        <a href="guidance/index.html"
+          ><img src="img/home-btn-nt_02.png" alt="案内管理" />
+          <p>案内管理</p></a
+        >
+        <a href="construction/index.html"
+          ><img src="img/home-btn-nt_03.png" alt="工事管理" />
+          <p>工事管理</p></a
+        >
+        <a href="vendor/index.html"
+          ><img src="img/home-btn-nt_04.png" alt="業者一覧" />
+          <p>業者一覧</p></a
+        >
+        <a href="property/index.html"
+          ><img src="img/home-btn-nt_05.png" alt="物件管理" />
+          <p>物件管理</p></a
+        >
+        <a href="seller/index.html"
+          ><img src="img/home-btn-nt_06.png" alt="売主物件" />
+          <p>売主物件</p></a
+        >
+        <a href="file/index.html"
+          ><img src="img/home-btn-nt_07.png" alt="ファイルマネージャー" />
+          <p>ファイルマネージャー</p></a
+        >
+        <a href="title/index.html"
+          ><img src="img/home-btn-nt_08.png" alt="タイトル管理" />
+          <p>タイトル管理</p></a
+        >
+        <a href="user/index.html"
+          ><img src="img/home-btn-nt_09.png" alt="ユーザー情報" />
+          <p>ユーザー情報</p></a
+        >
+      </div>
+    </div>
+    onchange="if(document.formlink.selectlink.value){
+    location.href=document.formlink.selectlink.value; }"
+  </body>
+</html>
